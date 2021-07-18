@@ -45,12 +45,12 @@ To set the number of monte carlo samples for bayesian models:
 ### Usage - test commands:
 Test-set 1: **SPARSE**
 ```sh
-$ python3 train.py --cuda --test --custom-test-depth 200 --custom-test-tsv "<...>/validation.not-subset.top200.cleaned.split-4/*" --custom-test-qrels "/share/cp/datasets/ir/msmarco/passage/qrels.dev.tsv" --custom-test-candidates "/share/cp/datasets/ir/msmarco/passage/run.msmarco-passage.BM25_k1_0.9_b_0.4.dev.txt" --test-files-pretfix "SPARSE-" --run-folder <run_folder> --gpu-id 0
+$ python3 train.py --cuda --test --custom-test-depth 200 --custom-test-tsv "<...>/validation.not-subset.top200.cleaned.split-4/*" --custom-test-qrels "<...>/qrels.dev.tsv" --custom-test-candidates "<...>/run.msmarco-passage.BM25_k1_0.9_b_0.4.dev.txt" --test-files-pretfix "SPARSE-" --run-folder <run_folder> --gpu-id 0
 ```
 
 Test-set 2: **TREC - 2019**
 ```sh
-$ python3 train.py --cuda --test --custom-test-depth 200 --custom-test-tsv "<...>/test2019.top1000.cleaned.split-4/*" --custom-test-qrels "/share/cp/datasets/ir/msmarco/passage/test2019-qrels.txt" --custom-test-candidates "/share/cp/datasets/ir/msmarco/passage/run.msmarco-passage.BM25-k1_0.82_b_0.72.test2019.txt" --test-files-pretfix "TREC-19-" --run-folder <run_folder> --gpu-id 0
+$ python3 train.py --cuda --test --custom-test-depth 200 --custom-test-tsv "<...>/test2019.top1000.cleaned.split-4/*" --custom-test-qrels "<...>/test2019-qrels.txt" --custom-test-candidates "<...>/run.msmarco-passage.BM25-k1_0.82_b_0.72.test2019.txt" --test-files-pretfix "TREC-19-" --run-folder <run_folder> --gpu-id 0
 ```
 
 
